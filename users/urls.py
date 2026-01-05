@@ -4,7 +4,7 @@ from rest_framework.routers import DefaultRouter
 from users.views import UsersViewSet
 
 router =DefaultRouter()
-router.register('users',UsersViewSet)
+router.register(r'users',UsersViewSet)
 custommethod1=UsersViewSet.as_view({'delete':'all_delete_users'})
 
 urlpatterns = [
